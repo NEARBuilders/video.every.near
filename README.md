@@ -1,45 +1,73 @@
-# trylivepeer.near
+<!-- markdownlint-disable MD014 -->
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD041 -->
+<!-- markdownlint-disable MD029 -->
 
-—> [near-bos-webcomponent](https://www.npmjs.com/package/@bbface/near-bos-webcomponent-livepeer) with [livepeer](https://livepeer.org/) installed, deployed to [web4](https://web4.near.page/), in order to provide a sandbox for builders wanting to create decentralized video apps.
+<div align="center">
 
-![trylivepeer.near](./assets/trylivepeer.png)
+<h1 style="font-size: 2.5rem; font-weight: bold;">trylivepeer.near</h1>
 
-See it live: [trylivepeer.near.page](https://trylivepeer.near.page)
+  <p>
+    <strong>A sandbox for builders wanting to create decentralized video apps.</strong>
+  </p>
 
-## Getting started
+</div>
 
-To run locally, install packages:
+`trylivepeer.near` is [near-bos-webcomponent](https://github.com/NEARBuilders/near-bos-webcomponent) with [livepeer](https://livepeer.org/) installed, deployed to [web4](https://web4.near.page/), in order to provide a sandbox for builders wanting to create decentralized video apps.
+
+<details>
+  <summary>Table of Contents</summary>
+
+- [Getting Started](#getting-started)
+- [Project Structure](#getting-started)
+- [Contributing](#contributing)
+
+</details>
+
+## Getting Started
+
+### Installing dependencies
 
 ```bash
-pnpm run init
-pnpm install
+npm install
 ```
 
-Then, run the command:
+### Running the app
+
+First, run the development server:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
-This will serve the widgets from `http://127.0.0.1:8080/` and start a local gateway.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-Also, don't forget to add API key in `.env`.
+### Building for production
 
-## Usage
+```bash
+npm run build
+```
 
-You can run the local gateway with `yarn run start`, then open `localhost:3000/trylivepeer.near/widget/index`,
-then navigate to the sandbox.
+### Running tests
 
-The goal of this project is to expose the below components through the Near Social VM, so that these keywords may be used in Widgets.
+```bash
+npm run test
+```
 
-### `Player`
+See the full [testing guide](./playwright-tests/README.md).
 
-https://docs.livepeer.org/sdks/react/migration/migration-4.x#player
+## Contributing
 
-Example code: https://docs.livepeer.org/sdks/react/Player
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### `Broadcast`
+If you're interested in contributing to this project, please read the [contribution guide](./CONTRIBUTING).
 
-https://docs.livepeer.org/sdks/react/migration/migration-4.x#broadcast
-
-Example code: https://docs.livepeer.org/sdks/react/Broadcast
+<div align="right">
+<a href="https://nearbuilders.org" target="_blank">
+<img
+  src="https://builders.mypinata.cloud/ipfs/QmWt1Nm47rypXFEamgeuadkvZendaUvAkcgJ3vtYf1rBFj"
+  alt="Near Builders"
+  height="40"
+/>
+</a>
+</div>
